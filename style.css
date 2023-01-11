@@ -1,7 +1,7 @@
 @font-face {
     font-family: RB;
-    src: url(/RB\ Regular.ttf);
-    src: url(/RB\ Bold.ttf);
+    src: url(RB\ Regular.ttf);
+    src: url(RB\ Bold.ttf);
   }
 
 *{
@@ -14,7 +14,7 @@
        display:flex;
        justify-content:center;
        align-items:center;
-       background-image: url(/BG.jpg);
+       background-image: url(BG.jpg);
        background-repeat: no-repeat;
        background-size: cover;
    }
