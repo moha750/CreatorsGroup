@@ -21,7 +21,7 @@
    
    .card{
        height:700px;
-       width:350px;
+       width:300px;
        background-color:#fff;
        border-radius:10px;
        padding:10px 20px;
@@ -73,7 +73,7 @@ h5 {
     display:flex;
     list-style:none;
     counter-reset:container 0;
-    margin-left: 30px;
+    margin-left: 5px;
     
 }
 .progress-bar li{
@@ -213,7 +213,7 @@ h5 {
 
    textarea {
     width:100%;
-    height:275px;
+    height:276px;
     border:none;
     border:2px solid rgb(245, 245, 245);
     box-shadow:0px 5px 20px 2px rgba(0,0,0,0.1);
@@ -315,13 +315,13 @@ h5 {
   display:flex;
   justify-content:center;
   flex-wrap:wrap;
-  gap:20px;
+  gap:15px;
   max-width:650px;
    }
 
    #form-element {
     position:relative;
-    width:100px;
+    width:90px;
     height:80px;
   }
   #form-element input {
@@ -511,10 +511,10 @@ h5 {
   
   label svg {
     fill: rgb(242, 242, 242);
-    height: 33px;
-    width: 33px;
+    height: 32px;
+    width: 32px;
     margin: 0px;
-    padding: 0px 16.2px;
+    padding: 0px 11.7px;
   }
   
   input[type="radio"] + svg {
