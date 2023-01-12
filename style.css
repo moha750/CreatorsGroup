@@ -21,7 +21,7 @@
    
    .card{
        height:730px;
-       width:280px;
+       width:250px;
        background-color:#fff;
        border-radius:10px;
        padding:10px 20px;
@@ -80,7 +80,7 @@ h5 {
        list-style:none;
        counter-increment:container 1;
        position:relative;
-       margin-right:133px;
+       margin-right:110px;
        margin-top:20px;
    }
    .progress-bar li::before{
@@ -100,7 +100,7 @@ h5 {
        content:'';
        position:absolute;
        height:2px;
-       width:140px;
+       width:100px;
        background-color:#f5f7fa;
        top:12px;
        right:-10px;
@@ -212,7 +212,7 @@ h5 {
 
    textarea {
     width:100%;
-    height:285px;
+    height:269px;
     border:none;
     border:2px solid rgb(245, 245, 245);
     box-shadow:0px 5px 20px 2px rgba(0,0,0,0.1);
@@ -314,13 +314,13 @@ h5 {
   display:flex;
   justify-content:center;
   flex-wrap:wrap;
-  gap:20px;
+  gap:12px;
   max-width:650px;
    }
 
    #form-element {
     position:relative;
-    width:80px;
+    width:75px;
     height:100px;
   }
   #form-element input {
@@ -383,11 +383,11 @@ h5 {
   }
 
   .twitter {
-    padding: 0px 17px;
+    padding: 0px 15px;
   }
 
   .group {
-    padding: 0px 17px;
+    padding: 0px 15px;
   }
 
 
@@ -487,10 +487,10 @@ h5 {
   
   label svg {
     fill: rgb(242, 242, 242);
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     margin: 0px;
-    padding: 0px 8px;
+    padding: 0px 7.7px;
   }
   
   input[type="radio"] + svg {
