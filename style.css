@@ -1,7 +1,7 @@
 @font-face {
     font-family: RB;
-    src: url(RB\ Regular.ttf);
-    src: url(RB\ Bold.ttf);
+    src: url(/RB\ Regular.ttf);
+    src: url(/RB\ Bold.ttf);
   }
 
 *{
@@ -14,17 +14,18 @@
        display:flex;
        justify-content:center;
        align-items:center;
-       background-image: url(BG.jpg);
+       background-image: url(/BG.jpg);
        background-repeat: no-repeat;
        background-size: cover;
    }
    
    .card{
        height:730px;
-       width:350px;
+       width:280px;
        background-color:#fff;
        border-radius:10px;
        padding:10px 20px;
+       margin: 20px;
    }
 
 h5 {
@@ -71,7 +72,7 @@ h5 {
        display:flex;
        list-style:none;
        counter-reset:container 0;
-       margin-left: 28px;
+       margin-left: -5px;
        
    }
    .progress-bar li{
@@ -211,7 +212,7 @@ h5 {
 
    textarea {
     width:100%;
-    height:313px;
+    height:285px;
     border:none;
     border:2px solid rgb(245, 245, 245);
     box-shadow:0px 5px 20px 2px rgba(0,0,0,0.1);
@@ -308,7 +309,7 @@ h5 {
    }
 
 
-   .con {
+   #con {
     margin-top:5px;
   display:flex;
   justify-content:center;
@@ -317,15 +318,15 @@ h5 {
   max-width:650px;
    }
 
-   .form-element {
+   #form-element {
     position:relative;
-    width:90px;
+    width:80px;
     height:100px;
   }
-  .form-element input {
+  #form-element input {
     display:none;
   }
-  .form-element label {
+  #form-element label {
     width:100%;
     display:flex;
     flex-direction:column;
@@ -338,18 +339,18 @@ h5 {
     transition:all 200ms ease-in-out;
     border-radius:5px;
   }
-  .form-element .icon {
+  #form-element .icon {
     margin-top:-5px;
     font-size:30px;
     color:#0051B2;
     transition:all 200ms ease-in-out;
   }
-  .form-element .title {
+  #form-element .title {
     font-size:15px;
     color:#0051B2;
     transition:all 200ms ease-in-out;
   }
-  .form-element label:before {
+  #form-element label:before {
     content:"✓";
     position:absolute;
     width:18px;
@@ -367,26 +368,26 @@ h5 {
     transform:scale(0.5);
     transition:all 200ms ease-in-out;
   }
-  .form-element input:checked + label:before {
+  #form-element input:checked + label:before {
     opacity:1;
     transform:scale(1);
   }
-  .form-element input:checked + label .icon {
+  #form-element input:checked + label .icon {
     color:#FFC60A;
   }
-  .form-element input:checked + label .title {
+  #form-element input:checked + label .title {
     color:#FFC60A;
   }
-  .form-element input:checked + label {
+  #form-element input:checked + label {
     border:2px solid #FFC60A;
   }
 
   .twitter {
-    padding: 0px 30px;
+    padding: 0px 17px;
   }
 
   .group {
-    padding: 0px 30px;
+    padding: 0px 17px;
   }
 
 
@@ -489,7 +490,7 @@ h5 {
     height: 35px;
     width: 35px;
     margin: 0px;
-    padding: 0px 15px;
+    padding: 0px 8px;
   }
   
   input[type="radio"] + svg {
