@@ -32,7 +32,7 @@
                    <p>تتذكري يوم قلتلك فكرتي ان تكون الصفحة الأولى عباره عن كلام يحمل رسائل توطد العلاقة بين الاعضاء  .. ترا انتظرك بس اول شي اهتمي بدراسك وهالله هالله بـ الدرجات العالية</p>
                 </div>
                 <div class="input-text">
-                    <input type="text" placeholder="أسمك يـ مُبدع/ـه " id="full-name" name="الأسم" require>
+                    <input type="text" placeholder="أسمك يـ مُبدع/ـه " id="input" name="الأسم" require>
                     <span>الأسم</span>
                 </div>
 
@@ -53,8 +53,8 @@
 
             <div id="con">
                 <div id="form-element">
-                    <input type="checkbox" name="مهارة المونتاج" value="المونتاج" id="dribbble" require>
-                    <label for="dribbble">
+                    <input type="checkbox" name="مهارة المونتاج" value="المونتاج" id="input" require>
+                    <label for="input">
                       <div class="icon">
                         <i class="fa-solid fa-play"></i>
                       </div>
@@ -64,8 +64,8 @@
                     </label>
                   </div>
                   <div id="form-element">
-                    <input type="checkbox" name="مهارة التصوير" value="التصوير" id="codepen" require>
-                    <label for="codepen">
+                    <input type="checkbox" name="مهارة التصوير" value="التصوير" id="input" require>
+                    <label for="input">
                       <div class="icon">
                         <i class="fa-solid fa-camera"></i>
                       </div>
@@ -75,8 +75,8 @@
                     </label>
                   </div>
                   <div id="form-element">
-                    <input type="checkbox" name="مهارة التصميم" value="التصميم" id="github" require>
-                    <label for="github">
+                    <input type="checkbox" name="مهارة التصميم" value="التصميم" id="input" require>
+                    <label for="input">
                       <div class="icon">
                         <i class="fa-solid fa-pen-nib"></i>
                       </div>
@@ -93,14 +93,14 @@
             </div>
 <hr>
             <div class="content">
-              <h4>أيّ نوع جهاز تستخدمه لإخراج إبداعك؟  </h4>
+              <h4>أيّ نوع جهاز تستخدمه لإنتاج إبداعك؟  </h4>
               <p>المُبدع مبُدع حتى لو أشتغل على جوال نوكيا</p>
            </div> 
 
             <div id="con">
                 <div id="form-element">
-                    <input type="checkbox" name="استخدم الجوال" value="جوال" id="instagram" require> 
-                    <label for="instagram">
+                    <input type="checkbox" name="استخدم الجوال" value="جوال" id="mobile" onclick="isChecked()" require> 
+                    <label for="mobile">
                       <div class="icon">
                         <i class="fa-solid fa-mobile-screen-button"></i>
                       </div>
@@ -122,11 +122,26 @@
                 </div>
             </div>
 
-            <div class="input-text">
-              <input type="text" name="هل تمتلك لابتوب؟" placeholder="اذا كُنت من مستخدمين الجوال، هل تمتلك لابتوب" id="full-name" require>
-              <span>هل تمتلك لابتوب؟</span>
-          </div>
-        
+
+<div id="result">
+  <hr class="hrr">
+            <div class="content">
+              <h4>هل تمتلك لابتوب؟  </h4>
+           </div> 
+
+            <div class="wrapper">
+              <input type="radio" name="هل تمتلك لابتوب؟" id="option-1" value="نعم أمتلك" require>
+              <input type="radio" name="هل تمتلك لابتوب؟" id="option-2" value="لا أمتلك" require>
+                <label for="option-1" class="option option-1">
+                  <div class="dot"></div>
+                   <span>نعم أمتلك</span>
+                   </label>
+                <label for="option-2" class="option option-2">
+                  <div class="dot"></div>
+                   <span>لا أمتلك</span>
+                </label>
+             </div>
+</div>        
                 <div class="button button_gap">
                     <button class="back-click">الرجوع للخلف</button>
                     <button class="next-click">باقي آخر خطوة</button>
@@ -141,7 +156,7 @@
            <p>علساس كذا وفرنا لك مساحة من الخصوصية للفضفضة</p>
         </div>
 
-      <textarea placeholder="في شي مو عاجبك! ودك تقترح شىء او تفضفض؟ ... المساحة كلها لك" name="مساحة فضفضة" cols="30" rows="30" require></textarea>
+      <textarea placeholder="في شي مو عاجبك! ودك تقترح شىء او تفضفض؟ ... المساحة كلها لك" name="مساحة فضفضة" cols="30" rows="30" requir></textarea>
             <hr class="hr">
       <h5>تقييمُك للجنة ونشطاتها</h5>
 
@@ -211,6 +226,7 @@
   </form>
 
       <script src="script.js"></script>
+
       <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwysxN7cQ5VF4hjXVq6avHKwvl-ck14UJ_uCsBjtAnHMnsVzYdke2lwYU_KfzMtQw5Zlg/exec'
         const form = document.forms['MyGroup']
@@ -223,6 +239,18 @@
           // .catch(error => console.error('Error!', error.message))
         })
         </script>
+          
+        <script>
+            function isChecked() {
+              if(document.getElementById("mobile").checked){
+                document.getElementById("result").style.display = 'block'
+              }
+              else{
+                document.getElementById("result").style.display = 'none'
+              }
+            }
+        </script>
+
         <script>(function(w, d) { w.CollectId = "63bf42d49eed8935fca522fd"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
 
 </body>
