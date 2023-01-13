@@ -20,7 +20,7 @@
    }
    
    .card{
-       height:700px;
+       height:690px;
        width:300px;
        background-color:#fff;
        border-radius:10px;
@@ -37,6 +37,10 @@ h5 {
 
 .hr {
   margin: 10px 0px 10px 0px;
+}
+
+.hrr {
+  margin-top: 20px;
 }
    
    .main{
@@ -213,7 +217,7 @@ h5 {
 
    textarea {
     width:100%;
-    height:276px;
+    height:268px;
     border:none;
     border:2px solid rgb(245, 245, 245);
     box-shadow:0px 5px 20px 2px rgba(0,0,0,0.1);
@@ -555,3 +559,64 @@ h5 {
   input[class="super-sad"]:focus + svg {
     fill: rgb(239, 42, 16);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+  .wrapper{
+    display: flex;
+    width: 66%;
+    justify-content: space-between;
+    margin: 10px auto;
+  }
+  .wrapper .option{
+    text-align: center;
+    width:90px;
+    height:30px;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border:2px solid rgb(245, 245, 245);
+    box-shadow:0px 5px 20px 2px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+
+
+  input[type="radio"]{
+    display: none;
+  }
+  #option-1:checked:checked ~ .option-1,
+  #option-2:checked:checked ~ .option-2{
+    border:2px solid #FFC60A;
+  }
+  #option-1:checked:checked ~ .option-1 .dot,
+  #option-2:checked:checked ~ .option-2 .dot{
+    background: #fff;
+  }
+  #option-1:checked:checked ~ .option-1 .dot::before,
+  #option-2:checked:checked ~ .option-2 .dot::before{
+    opacity: 1;
+    transform: scale(1);
+  }
+  .wrapper .option span{
+    font-size: 17px;
+    color: #0051B2;
+  }
+  #option-1:checked:checked ~ .option-1 span,
+  #option-2:checked:checked ~ .option-2 span{
+    color: #FFC60A;
+  }
+
+
+
+#result {
+  display: none;
+}
